@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham-Bold.woff2') format('woff2'),
+        url('Gotham-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+location ~* \.(eot|otf|ttf|woff|woff2)$ {
+    add_header Access-Control-Allow-Origin *;
+    expires max;
+}
+
+
+location / {
+    try_files $uri $uri/ =404;
+}
+

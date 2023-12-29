@@ -1,0 +1,95 @@
+@import url(https://rblxembed.hyderite.repl.co/font/gotham/stylesheet.css);
+
+.embed {
+  transition: 0.3s;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  border: 0.01rem solid #DADCD0;
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #fff;
+  color: #393b3d;
+  font-family: "Gotham", sans-serif;
+  display: inline-block;
+  padding: 10px;
+  padding-right: 12.5px;
+  word-wrap: wrap;
+}
+
+.embed:hover {
+  transform: translateY(-10px);
+  -webkit-box-shadow: -1px 0px 9px -1px rgba(0,0,0,0.67); 
+  box-shadow: -1px 0px 9px -1px rgba(0,0,0,0.67);
+}
+
+.embed-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.embed-container a {
+  text-decoration: none;
+}
+
+.embed-container a:hover {
+  color: #393b3d;
+  text-decoration: underline;
+}
+
+.embed-thumbnail {
+  float: left;
+  margin: 18px;
+  margin-left: 0;
+}
+
+.game-title {
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: -10px;
+  width: 300px;
+}
+
+.game-author {
+  color: #606162;
+}
+
+.username {
+  color: #393b3d;
+}
+
+.play-button {
+  background-color: #00b06f;
+  border-color: #00b06f;
+  color: #fff;
+  border-radius: 8px;
+  user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  height: auto;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 12px;
+  font-size: 20px;
+  line-height: 100%;
+  width: 300px;
+}
+
+.play-image {
+  background-image: url(https://images.rbxcdn.com/12b9aebb04be3456093a6d3b75f8350b-common_light.svg);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media all and (max-width: 480px) {
+  .embed-thumbnail {
+    width: 300px;
+  }
+}

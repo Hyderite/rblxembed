@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>RBLXEmbed</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/images/rblxembed.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="navbar">
+      <img src="/images/rblxembed.png" alt="RBLXEmbed Logo" id="logo" draggable="false"><p id="subtitle" style="position: relative; margin: 0; padding-left: 69px; padding-top: 11px;">RBLXEmbed</p>
+    </div>
+    <div id="body">
+      <div id="form">
+        <label for="gamename">Game name</label>
+        <br>
+        <input id="gamename" type="text" placeholder="Game name...">
+        <br>
+        <br>
+        <label for="author">Author/Group</label>
+        <br>
+        <input id="author" type="text" placeholder="Your username/group name..." style="width: 225px;">
+        <br>
+        <br>
+        <label for="authorlink">Profile link/Group link</label>
+        <br>
+        <input id="authorlink" type="text" placeholder="Your profile/group link...">
+        <br>
+        <br>
+        <label for="gamelink">Game link</label>
+        <br>
+        <input id="gamelink" type="text" placeholder="Game link...">
+        <br>
+        <br>
+        <label for="thumbnail">Thumbnail </label><a href="/images/how_to_copy_image_link.gif" id="thumbnail-help" target="_blank" rel="nofollow noreferrer noopener">Help</a>
+        <br>
+        <input id="thumbnail" type="text" placeholder="Thumbnail link...">
+      </div>
+      <img src="/images/render.png" style="aspect-ratio: 1;" id="render-image">
+    </div>
+    <br>
+    <br>
+    <a href="#result" id="scroll-to-result" style="display: table; margin: 0 auto;">Generate embed</a>
+    <div id="result">
+      <div id="result-container">
+        <p id="subtitle" class="error">You didn't generate any embeds.</p>
+        <div id="embed">
+          <div id="embed-container">
+            <img src="" alt="The link of the thumbnail is broken. Please enter another link." id="embed-thumbnail">
+            <div id="game-info">
+              <p id="game-title"></p>
+              <p id="game-author">By <a href="https://rblxembed.tk" id="username"></a></p>
+              <a href="https://rblxembed.tk" id="play-button">
+                <span id="play-image"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="instructions">
+          <p id="subtitle">Option 1: Use our hosted CSS file</p>
+          <p id="subtitle">1. Put this piece of code into your HTML document's <code>head</code></p>
+          <textarea id="code1" type="text" readonly><link href="https://rblxembed.hyderite.repl.co/css/rblxembed.css" rel="stylesheet" type="text/css" />
+<link href="https://rblxembed.hyderite.repl.co/font/gotham/stylesheet.css" rel="stylesheet" type="text/css" /></textarea>
+          <p id="subtitle">2. Put this piece of code into your HTML document</p>
+          <textarea id="code2" type="text" readonly></textarea>
+          <p id="subtitle" style="text-align: center;">OR</p>
+          <p id="subtitle">Option 2: Host it yourself</p>
+          <p id="subtitle">1. Download this file</p>
+          <a href="/download/rblxembed.zip" class="btn" rel="nofollow noreferrer noopener" download>Download</a>
+          <p id="subtitle">2. Unzip the file and upload it to your website</p>
+          <p id="subtitle">3. Put this piece of code into your HTML document's <code>head</code></p>
+          <textarea id="code1" type="text" readonly><link href="/rblxembed/css/rblxembed.css" rel="stylesheet" type="text/css" />
+<link href="/rblxembed/font/gotham/stylesheet.css" rel="stylesheet" type="text/css" /></textarea>
+          <p id="subtitle">4. Put this piece of code into your HTML document</p>
+          <textarea id="code3" type="text" readonly></textarea>
+        </div>
+        <div style="text-align: center;">RBLXEmbed is open-source on <a href="https://github.com/Hyderite/rblxembed" rel="nofollow noreferrer noopener" target="_blank" id="link">GitHub</a>.</div>
+        <div style="text-align: center;">Made by <a href="https://hyderite.repl.co" rel="nofollow noreferrer noopener" target="_blank" id="link" style="color: #c30000;">Hyderite</a>. <a href="https://hyderite.repl.co/#footer" rel="nofollow noreferrer noopener" id="link">Contact me</a> if there are any bugs.</div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
